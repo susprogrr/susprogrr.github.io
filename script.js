@@ -18,6 +18,14 @@ document.getElementById("btn").addEventListener("click", () => {
     "優しいところが好き",
     "ときどきぽんこつかますの可愛い",
     "いっぱいほめてくれる"
+    "いっぱい話しかけてくれるのうれしい"
+    "たまに甘やかしてくれるのうれしい"
+    "いっぱいかっこいいとかかわいいとか言ってくれるのうれしい"
+    "たまに遊びに誘ってくれるのめっちゃうれしい"
+    "クリスマスのときとか物もらったときすごいうれしかった"
+    "一緒にいるだけでもうれしい"
+    "とにかくすごいかわいい"
+    
   ];
 
   // ★ 1%の確率でSSR
@@ -25,7 +33,7 @@ document.getElementById("btn").addEventListener("click", () => {
 
   if (isSSR) {
     showSSR();
-    document.getElementById("message").textContent = "この世で一番大好きだよ";
+    document.getElementById("message").textContent = "好きになってくれてありがと。俺はそんなにできた人じゃないけど、これからもよろしくね。この世で一番大好きだよ";
     return;
   }
 
@@ -42,6 +50,18 @@ document.getElementById("btn").addEventListener("click", () => {
   }
   if (count === 90) {
     document.getElementById("message").textContent = "めっちゃ気に入ってくれてる";
+  }
+  if (count === 120) {
+    document.getElementById("message").textContent = "にゅーん";
+  }
+  if (count === 150) {
+    document.getElementById("message").textContent = "わはは";
+  }
+  if (count === 190) {
+    document.getElementById("message").textContent = "なんで180じゃないんだろうって思った？";
+  }
+  if (count === 210) {
+    document.getElementById("message").textContent = "めっちゃ見てくれてありがと";
   }
 });
 
